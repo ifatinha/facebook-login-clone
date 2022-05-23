@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --blue: #3b5998;
+    --black: #373144;
+    --green: #42b72a;
+    --light-blue: #1877f2;
+    --light-cyane: #e8f0fe;
+    --light-gray: #f0f2f5;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clear {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 80%;
+    width: 80%;
+}
+
+.hr {
+    background-color: #ccc;
+    border: none;
+    content: "";
+    height: 1px;
+    margin: 3% 0;
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1%;
+    height: 10vh;
+    width: 100%;
+}
+
+.center .header-logo {
+    float: left;
+    text-transform: lowercase;
+}
+
+.header-logo h1 {
+    font-size: 2.5em;
+}
+
+.center .form-login {
+    float: right;
+    position: relative;
+}
+
+.form-login .form-login-element {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-login-element label {
+    display: block;
+    font-size: 0.8em;
+}
+
+.form-login-element a {
+    color: var(--white);
+    display: block;
+    font-size: 0.7em;
+}
+
+.form-login-element input[type="email"],
+.form-login-element input[type="password"] {
+    padding: 3px;
+    outline: none;
+    margin-top: 1%;
+}
+
+.form-login-element input[type="email"]:focus,
+.form-login-element input[type="password"]:focus {
+    background-color: var(--light-cyane);
+    border: none;
+}
+
+.form-login-element input::placeholder {
+    padding: 15px 0;
+}
+
+.form-login-element input[type="submit"] {
+    background-color: #324b81;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.form-login-element input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+main {
+    background-color: var(--light-gray);
+    height: 90vh;
+    padding: 6% 0;
+}
+
+main .left-column {
+    float: left;
+    padding: 12% 6%;
+    width: 50%;
+}
+
+main .left-column img {
+    width: 50%;
+}
+
+main .left-column h2 {
+    margin-top: 2%;
+}
+
+main .right-column {
+    float: right;
+    padding: 1%;
+    width: 50%;
+}
+
+.right-column .form-desktop,
+.right-column .form-mobile {
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 2% 4%;
+    width: 70%;
+}
+
+.right-column .form-desktop p {
+    font-size: 0.8em;
+    margin: 1% 0;
+}
+
+.right-column .form-desktop .form-desktop-element,
+.right-column .form-mobile .form-mobile-element {
+    margin: 3% 0;
+    width: 100%;
+}
+
+.form-desktop .form-desktop-element input[type="text"],
+.form-desktop .form-desktop-element input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--light-gray);
+    outline: none;
+    padding: 10px;
+}
+
+.form-desktop>.form-desktop-element input {
+    margin-left: 1%;
+    width: 48%;
+}
+
+.form-desktop .form-desktop-element .form-resgiter-100 {
+    width: 98%;
+}
+
+.form-desktop .form-desktop-element label {
+    display: block;
+    font-size: 0.8em;
+}
+
+.form-desktop .form-desktop-element select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 1% 0;
+    padding: 2%;
+    width: 32%;
+}
+
+.form-desktop .form-desktop-element select option {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-desktop .form-desktop-element .radio-btn {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2%;
+    margin: 2% 0;
+    position: relative;
+    width: 32%;
+}
+
+.form-desktop .form-desktop-element .radio-btn input[type="radio"] {
+    position: absolute;
+    padding-left: 5%;
+    right: -16%;
+    top: 30%;
+}
+
+.form-desktop .texto-termos p {
+    font-size: 0.7em;
+}
+
+.form-desktop .texto-termos a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.form-desktop input[type="submit"] {
+    background-color: var(--green);
+    border: none;
+    color: white;
+    margin: 1% 20%;
+    padding: 2%;
+    width: 60%;
+}
+
+.form-desktop input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.form-mobile {
+    display: none;
+}
+
+.form-mobile .form-mobile-element {
+    text-align: center;
+}
+
+.form-mobile .form-mobile-element input,
+.form-mobile .form-mobile-element .btn-entrar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 4%;
+    width: 100%;
+}
+
+.form-mobile .form-mobile-element input:focus {
+    border: 1px solid var(--light-blue);
+}
+
+.form-mobile .form-mobile-element input::placeholder {
+    font-size: 1.2em;
+}
+
+.form-mobile .form-mobile-element .btn-entrar {
+    background-color: var(--light-blue);
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.form-mobile .form-mobile-element .btn-entrar:hover {
+    background-color: #0e70f1;
+}
+
+.form-mobile .form-mobile-element a {
+    color: var(--light-blue);
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 2% 0;
+}
+
+.form-mobile .form-mobile-element .btn-register {
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: 2% 0;
+    padding: 4%;
+    width: 50%;
+}
+
+.form-mobile .form-mobile-element .btn-register:hover {
+    background-color: #349121;
+    cursor: pointer;
+}
+
+footer {
+    padding: 2% 0;
+}
+
+footer .center hr {
+    background-color: #ccc;
+    border: none;
+    content: "";
+    margin: 1% 0;
+    height: 1px;
+}
+
+footer .center .footer-links a {
+    color: #737373;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+footer .center .footer-links:last-child {
+    margin-top: 1%;
+}
+
+footer .center .footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    .center .header-logo {
+        float: none;
+        text-align: center;
+    }
+
+    .center .form-login {
+        float: none;
+        display: none;
+    }
+
+    main {
+        height: auto;
+        text-align: center;
+    }
+
+    .center .right-column,
+    .center .left-column {
+        float: none;
+        width: 100%;
+    }
+
+    .center .right-column .form-desktop {
+        display: none;
+    }
+
+    .center .right-column .form-mobile {
+        display: block;
+    }
+
+    .center .right-column,
+    .center .right-column .form-mobile,
+    .form-mobile .form-mobile-element .btn-register {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+
+    .center .header-logo {
+        text-align: center;
+    }
+
+    main {
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .center .right-column,
+    .center .left-column {
+        width: 100%;
+    }
+
+    .center .right-column .form-desktop {
+        display: none;
+    }
+
+    .center .right-column .form-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-mobile .form-mobile-element .radio-btn {
+        text-align: left;
+    }
+}
